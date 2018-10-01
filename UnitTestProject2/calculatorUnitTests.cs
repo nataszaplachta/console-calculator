@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using console_calculator;
 
 namespace UnitTestProject1
 {
@@ -11,11 +12,10 @@ namespace UnitTestProject1
         {
             double a = 10;
             double b = 20;
-            double expectedResult = 30;
+            double expectedResult = a+b;
             
-            double actualResult = ;
 
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, 30);
 
 
         }
@@ -24,11 +24,10 @@ namespace UnitTestProject1
         {
             double a = 20;
             double b = 10;
-            double expectedResult = 10;
+            double expectedResult = a-b;
+            
 
-            double actualResult = ;
-
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, 10);
 
         }
         [TestMethod]
@@ -36,22 +35,20 @@ namespace UnitTestProject1
         {
             double a = 5;
             double b = 4;
-            double expectedResult = 20;
+            double expectedResult = a*b;
+            
 
-            double actualResult = ;
-
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, 20);
         }
         [TestMethod]
         public void TestDzielenia()
         {
             double a = 20;
             double b = 5;
-            double expectedResult = 4;
+            double expectedResult = a/b;
+            
 
-            double actualResult = ;
-
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, 4);
 
         }
     }
